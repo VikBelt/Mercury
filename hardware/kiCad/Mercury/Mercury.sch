@@ -1473,4 +1473,10 @@ Text GLabel 2500 4900 0    50   Input ~ 0
 ALT_INT_2
 Text GLabel 2500 5000 0    50   Input ~ 0
 ALT_INT_1
+Text GLabel 4300 2600 2    50   Input ~ 0
+~GPS_RESET
+Text GLabel 4300 6100 2    50   Input ~ 0
+TIME_PULSE
+Text GLabel 4300 6000 2    50   Input ~ 0
+GPS_LNA_EN
 $EndSCHEMATC
