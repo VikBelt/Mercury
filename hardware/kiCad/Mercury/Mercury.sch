@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Mercury Avionics Package"
 Date "2020-12-21"
 Rev "1.0"
@@ -1304,7 +1304,6 @@ F 3 "~" H 9550 1850 50  0001 C CNN
 	1    9550 1850
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 800  6125
 $Comp
 L Device:LED D?
 U 1 1 5FF00635
@@ -1460,4 +1459,18 @@ F 3 "" H 9875 2400 50  0001 C CNN
 	1    9875 2400
 	-1   0    0    1   
 $EndComp
+$Sheet
+S 6050 4975 1600 800 
+U 5FE81F4B
+F0 "peripherals" 50
+F1 "peripherals.sch" 50
+$EndSheet
+Text GLabel 4300 4000 2    50   Input ~ 0
+IMU_INT
+Text GLabel 4300 4700 2    50   Input ~ 0
+FLASH_CS
+Text GLabel 2500 4900 0    50   Input ~ 0
+ALT_INT_2
+Text GLabel 2500 5000 0    50   Input ~ 0
+ALT_INT_1
 $EndSCHEMATC

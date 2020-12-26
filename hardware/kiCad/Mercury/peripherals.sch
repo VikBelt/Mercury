@@ -1,0 +1,456 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 2
+Title "Mercury Peripherals"
+Date "2020-12-25"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C?
+U 1 1 5FE8734D
+P 700 825
+F 0 "C?" H 792 871 50  0000 L CNN
+F 1 "100nF" H 792 780 50  0000 L CNN
+F 2 "" H 700 825 50  0001 C CNN
+F 3 "~" H 700 825 50  0001 C CNN
+	1    700  825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE87357
+P 700 925
+F 0 "#PWR?" H 700 675 50  0001 C CNN
+F 1 "GND" H 705 752 50  0000 C CNN
+F 2 "" H 700 925 50  0001 C CNN
+F 3 "" H 700 925 50  0001 C CNN
+	1    700  925 
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 1925 2    50   Input ~ 0
+IMU_REG_OUT
+Text GLabel 750  575  2    50   Input ~ 0
+IMU_REG_OUT
+Wire Wire Line
+	750  575  700  575 
+Wire Wire Line
+	700  575  700  725 
+Text GLabel 2500 1825 2    50   Input ~ 0
+IMU_CAP_OUT
+$Comp
+L power:GND #PWR?
+U 1 1 5FE88B7C
+P 1800 2325
+F 0 "#PWR?" H 1800 2075 50  0001 C CNN
+F 1 "GND" H 1805 2152 50  0000 C CNN
+F 2 "" H 1800 2325 50  0001 C CNN
+F 3 "" H 1800 2325 50  0001 C CNN
+	1    1800 2325
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 1325 2    50   Input ~ 0
+IMU_INT
+$Comp
+L Device:C_Small C?
+U 1 1 5FE85D3D
+P 2850 800
+F 0 "C?" H 2942 846 50  0000 L CNN
+F 1 "100nF" H 2942 755 50  0000 L CNN
+F 2 "" H 2850 800 50  0001 C CNN
+F 3 "~" H 2850 800 50  0001 C CNN
+	1    2850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9D84E
+P 2850 925
+F 0 "#PWR?" H 2850 675 50  0001 C CNN
+F 1 "GND" H 2855 752 50  0000 C CNN
+F 2 "" H 2850 925 50  0001 C CNN
+F 3 "" H 2850 925 50  0001 C CNN
+	1    2850 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FE9D8F2
+P 2450 800
+F 0 "C?" H 2542 846 50  0000 L CNN
+F 1 "100nF" H 2542 755 50  0000 L CNN
+F 2 "" H 2450 800 50  0001 C CNN
+F 3 "~" H 2450 800 50  0001 C CNN
+	1    2450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FE9D8FC
+P 2450 700
+F 0 "#PWR?" H 2450 550 50  0001 C CNN
+F 1 "+3.3V" H 2465 873 50  0000 C CNN
+F 2 "" H 2450 700 50  0001 C CNN
+F 3 "" H 2450 700 50  0001 C CNN
+	1    2450 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 700  2850 700 
+Wire Wire Line
+	2850 900  2850 925 
+Wire Wire Line
+	2450 925  2450 900 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FE9F026
+P 1900 900
+F 0 "#PWR?" H 1900 750 50  0001 C CNN
+F 1 "+3.3V" H 1915 1073 50  0000 C CNN
+F 2 "" H 1900 900 50  0001 C CNN
+F 3 "" H 1900 900 50  0001 C CNN
+	1    1900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9F4E9
+P 1100 1525
+F 0 "#PWR?" H 1100 1275 50  0001 C CNN
+F 1 "GND" H 1105 1352 50  0000 C CNN
+F 2 "" H 1100 1525 50  0001 C CNN
+F 3 "" H 1100 1525 50  0001 C CNN
+	1    1100 1525
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 1325 0    50   Input ~ 0
+I2C1_SDA
+Text GLabel 1100 1425 0    50   Input ~ 0
+I2C1_SCL
+$Comp
+L Sensor_Motion:MPU-6050 U?
+U 1 1 5FE83197
+P 1800 1625
+F 0 "U?" H 2150 2225 50  0000 C CNN
+F 1 "MPU-6050" H 1400 2225 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 1800 825 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 1800 1475 50  0001 C CNN
+	1    1800 1625
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1100 1925
+NoConn ~ 1100 1825
+NoConn ~ 2500 1625
+NoConn ~ 2500 1525
+Connection ~ 2450 700 
+Connection ~ 2850 925 
+Wire Wire Line
+	2450 925  2850 925 
+Wire Wire Line
+	6150 1700 6150 1725
+Text GLabel 6625 1725 0    35   Input ~ 0
+~HOLD
+$Comp
+L Device:R_Small R?
+U 1 1 5FEBB4C1
+P 6650 1600
+F 0 "R?" H 6709 1646 50  0000 L CNN
+F 1 "4k7" H 6709 1555 50  0000 L CNN
+F 2 "" H 6650 1600 50  0001 C CNN
+F 3 "~" H 6650 1600 50  0001 C CNN
+	1    6650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FEBB4CB
+P 6650 1500
+F 0 "#PWR?" H 6650 1350 50  0001 C CNN
+F 1 "+3.3V" H 6665 1673 50  0000 C CNN
+F 2 "" H 6650 1500 50  0001 C CNN
+F 3 "" H 6650 1500 50  0001 C CNN
+	1    6650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1700 6650 1725
+Wire Wire Line
+	6650 1725 6625 1725
+$Comp
+L Sensor_Pressure:MPL3115A2 U?
+U 1 1 5FEBCDEA
+P 7925 1550
+F 0 "U?" H 7675 2000 50  0000 C CNN
+F 1 "MPL3115A2" H 8175 2025 50  0000 C CNN
+F 2 "Package_LGA:NXP_LGA-8_3x5mm_P1.25mm_H1.1mm" H 8925 1100 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf" H 7925 1550 50  0001 C CNN
+	1    7925 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8325 1450 2    50   Input ~ 0
+ALT_INT_1
+Text GLabel 8325 1550 2    50   Input ~ 0
+ALT_INT_2
+Text GLabel 7525 1450 0    50   Input ~ 0
+I2C2_SDA
+Text GLabel 7525 1550 0    50   Input ~ 0
+I2C2_SCL
+Text GLabel 8325 1750 2    50   Input ~ 0
+V_CAP_ALT
+Text GLabel 9025 1300 2    50   Input ~ 0
+V_CAP_ALT
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC1E70
+P 7925 2050
+F 0 "#PWR?" H 7925 1800 50  0001 C CNN
+F 1 "GND" H 7930 1877 50  0000 C CNN
+F 2 "" H 7925 2050 50  0001 C CNN
+F 3 "" H 7925 2050 50  0001 C CNN
+	1    7925 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEC2756
+P 8975 1475
+F 0 "C?" H 9067 1521 50  0000 L CNN
+F 1 "100nF" H 9067 1430 50  0000 L CNN
+F 2 "" H 8975 1475 50  0001 C CNN
+F 3 "~" H 8975 1475 50  0001 C CNN
+	1    8975 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC37C3
+P 8975 1650
+F 0 "#PWR?" H 8975 1400 50  0001 C CNN
+F 1 "GND" H 8980 1477 50  0000 C CNN
+F 2 "" H 8975 1650 50  0001 C CNN
+F 3 "" H 8975 1650 50  0001 C CNN
+	1    8975 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 1575 8975 1650
+Wire Wire Line
+	8975 1375 8975 1300
+Wire Wire Line
+	8975 1300 9025 1300
+Text GLabel 3325 600  2    50   Input ~ 0
+IMU_CAP_OUT
+$Comp
+L Device:C_Small C?
+U 1 1 5FEC44A4
+P 3300 825
+F 0 "C?" H 3392 871 50  0000 L CNN
+F 1 "2.2nF" H 3392 780 50  0000 L CNN
+F 2 "" H 3300 825 50  0001 C CNN
+F 3 "~" H 3300 825 50  0001 C CNN
+	1    3300 825 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 600  3300 725 
+Wire Wire Line
+	3325 600  3300 600 
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC4EC7
+P 3300 925
+F 0 "#PWR?" H 3300 675 50  0001 C CNN
+F 1 "GND" H 3305 752 50  0000 C CNN
+F 2 "" H 3300 925 50  0001 C CNN
+F 3 "" H 3300 925 50  0001 C CNN
+	1    3300 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEC6044
+P 9900 1550
+F 0 "C?" H 9992 1596 50  0000 L CNN
+F 1 "100nF" H 9992 1505 50  0000 L CNN
+F 2 "" H 9900 1550 50  0001 C CNN
+F 3 "~" H 9900 1550 50  0001 C CNN
+	1    9900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC6232
+P 9900 1650
+F 0 "#PWR?" H 9900 1400 50  0001 C CNN
+F 1 "GND" H 9905 1477 50  0000 C CNN
+F 2 "" H 9900 1650 50  0001 C CNN
+F 3 "" H 9900 1650 50  0001 C CNN
+	1    9900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FEC623C
+P 9900 1450
+F 0 "#PWR?" H 9900 1300 50  0001 C CNN
+F 1 "+3.3V" H 9915 1623 50  0000 C CNN
+F 2 "" H 9900 1450 50  0001 C CNN
+F 3 "" H 9900 1450 50  0001 C CNN
+	1    9900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEC8637
+P 9650 1550
+F 0 "C?" H 9450 1600 50  0000 L CNN
+F 1 "10uF" H 9400 1500 50  0000 L CNN
+F 2 "" H 9650 1550 50  0001 C CNN
+F 3 "~" H 9650 1550 50  0001 C CNN
+	1    9650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1450 9900 1450
+Connection ~ 9900 1450
+Wire Wire Line
+	9650 1650 9900 1650
+Connection ~ 9900 1650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FECC0FE
+P 7925 1025
+F 0 "#PWR?" H 7925 875 50  0001 C CNN
+F 1 "+3.3V" H 7940 1198 50  0000 C CNN
+F 2 "" H 7925 1025 50  0001 C CNN
+F 3 "" H 7925 1025 50  0001 C CNN
+	1    7925 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 1025 7925 1050
+Wire Wire Line
+	7925 1025 7825 1025
+Wire Wire Line
+	7825 1025 7825 1050
+Connection ~ 7925 1025
+Wire Wire Line
+	1700 900  1700 925 
+Wire Wire Line
+	1700 900  1900 900 
+Wire Wire Line
+	1900 900  1900 925 
+Connection ~ 1900 900 
+Wire Wire Line
+	6150 1725 6125 1725
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FEBA5C5
+P 6150 1500
+F 0 "#PWR?" H 6150 1350 50  0001 C CNN
+F 1 "+3.3V" H 6165 1673 50  0000 C CNN
+F 2 "" H 6150 1500 50  0001 C CNN
+F 3 "" H 6150 1500 50  0001 C CNN
+	1    6150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FEB8767
+P 6150 1600
+F 0 "R?" H 6209 1646 50  0000 L CNN
+F 1 "4k7" H 6209 1555 50  0000 L CNN
+F 2 "" H 6150 1600 50  0001 C CNN
+F 3 "~" H 6150 1600 50  0001 C CNN
+	1    6150 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6125 1725 0    35   Input ~ 0
+~WP
+Text GLabel 4275 1925 0    35   Input ~ 0
+~HOLD
+Text GLabel 4275 1825 0    35   Input ~ 0
+~WP
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FEB5024
+P 5650 1500
+F 0 "#PWR?" H 5650 1350 50  0001 C CNN
+F 1 "+3.3V" H 5665 1673 50  0000 C CNN
+F 2 "" H 5650 1500 50  0001 C CNN
+F 3 "" H 5650 1500 50  0001 C CNN
+	1    5650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEB3B27
+P 5650 1700
+F 0 "#PWR?" H 5650 1450 50  0001 C CNN
+F 1 "GND" H 5655 1527 50  0000 C CNN
+F 2 "" H 5650 1700 50  0001 C CNN
+F 3 "" H 5650 1700 50  0001 C CNN
+	1    5650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEB2202
+P 5650 1600
+F 0 "C?" H 5742 1646 50  0000 L CNN
+F 1 "100nF" H 5742 1555 50  0000 L CNN
+F 2 "" H 5650 1600 50  0001 C CNN
+F 3 "~" H 5650 1600 50  0001 C CNN
+	1    5650 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4275 1325 0    50   Input ~ 0
+FLASH_CS
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FEAF60A
+P 5475 1325
+F 0 "#PWR?" H 5475 1175 50  0001 C CNN
+F 1 "+3.3V" H 5490 1498 50  0000 C CNN
+F 2 "" H 5475 1325 50  0001 C CNN
+F 3 "" H 5475 1325 50  0001 C CNN
+	1    5475 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEAEDC5
+P 5475 1925
+F 0 "#PWR?" H 5475 1675 50  0001 C CNN
+F 1 "GND" H 5480 1752 50  0000 C CNN
+F 2 "" H 5475 1925 50  0001 C CNN
+F 3 "" H 5475 1925 50  0001 C CNN
+	1    5475 1925
+	1    0    0    -1  
+$EndComp
+Text GLabel 4275 1625 0    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 4275 1725 0    50   Input ~ 0
+SPI2_MISO
+Text GLabel 4275 1425 0    50   Input ~ 0
+SPI2_SCK
+$Comp
+L W25Q64FVZPIQ:W25Q64FVZPIQ U?
+U 1 1 5FEABF7C
+P 4875 1625
+F 0 "U?" H 4875 2192 50  0000 C CNN
+F 1 "W25Q64FVZPIQ" H 4875 2101 50  0000 C CNN
+F 2 "SON127P600X500X80-9N" H 4875 1625 50  0001 L BNN
+F 3 "" H 4875 1625 50  0001 L BNN
+F 4 "WINBOND" H 4875 1625 50  0001 L BNN "MANUFACTURER"
+	1    4875 1625
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
