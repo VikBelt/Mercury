@@ -1,4 +1,11 @@
-19026049694377994
+19032486260892024
+629105150521
+629105150521
+<B>WR-COM</b><BR>Type B with Pegs, High Current at Pin 1 & Pin 5 Micro USB 2.0 SMT Type B Horizontal 5 Contacts High Current
+
+0
+9
+9
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2274,6 +2281,13 @@ speaker CUI
 0
 2
 2
+CC2592
+QFN65P400X400X100-17N
+
+
+0
+17
+17
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -76292,6 +76306,13 @@ rotary encoder
 0
 5
 4
+SMA_ANT
+TE_5-1814832-1
+
+
+0
+5
+5
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -83026,3 +83047,10 @@ varistor SIOV
 0
 2
 2
+flash
+SON127P800X600X80-9N
+
+
+0
+9
+9
